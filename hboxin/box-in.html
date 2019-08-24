@@ -1,0 +1,71 @@
+<html>
+<!-- Script by hscripts.com -->
+<head>
+<script type="text/javascript" src="bjfun.js"></script>
+</head>
+<body>
+<form>
+<center><font color=#3D366F size=3>Level:
+<input type="radio" id="bb" name="myradio" onclick="window.location.href='?level=1'">1
+<input type="radio" id="bbb" name="myradio" onclick="window.location.href='?level=2'">2
+<input type="radio" id="bbbb" name="myradio" onclick="window.location.href='?level=3'">3</font></center><br>
+</form>
+<table align="center">
+<tr>
+<td>
+<script type="text/javascript" src="btab.js">
+</script>
+
+</td>
+</tr>
+</table><br>
+<table align="center">
+<tr>
+<td>
+<input type="button" name="sgame" id="sgame" value="START PLAY" onclick="startplay()">
+</td>
+</tr>
+</table>
+<table id="scard" align="center">
+<tr><td align="center" style="color: #3D366F;">SCORE CARD &nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr>
+<td align="center">
+<b style="color: #3D366F;">YOU :</b>&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="images/s0.gif" border=0 width="23" height="20" name="fus">
+<img src="images/s0.gif" border=0 width="23" height="20" name="sus">
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<b style="color: #3D366F;">COMPUTER :</b>&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/s0.gif" border=0 width="23" height="23" name="fcs">
+<img src="images/s0.gif" border=0 width="23" height="23" name="scs">
+</td>
+</tr>
+</table>
+<script type="text/javascript">
+var ur = document.location.href;
+if ( ur.indexOf("?") != -1 ){
+var a = ur.split("=");
+level = a[1];
+} 
+else
+{
+	document.getElementById("bb").checked=true
+}
+
+if(level==1)
+{
+	document.getElementById("bb").checked=true
+}
+else if(level==2)
+{
+	document.getElementById("bbb").checked=true
+}
+else if(level==3)
+{
+	document.getElementById("bbbb").checked=true
+}
+</script></form>
+</body>
+</html>
